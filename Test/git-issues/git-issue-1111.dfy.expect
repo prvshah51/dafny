@@ -1,0 +1,23 @@
+// git-issue-1111.dfy
+
+
+module Foo {
+  class A {
+    const a: int
+    const b: int
+
+    constructor (k: int, j: int)
+    {
+      a, b := k, j;
+    }
+  }
+
+  method Main()
+  {
+    var o := new A(1, 2);
+  }
+}
+
+Dafny program verifier did not attempt verification
+
+Process finished with exit code 0.
